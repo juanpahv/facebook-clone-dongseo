@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="base.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Facebook</title>
+</head>
+<body>
+  <section>
+    <img src="img/fb-logo.svg" alt="Facebook Logo" style="min-width: 380px; max-width: 380px;">
+  </section>
+  <main class="container">
+    <div>
+      <h1 style="font-size: x-large; font-weight: bold;">Create new account</h1>
+      <p style="text-align: center; color: grey;">It's quick and easy.</p>
+    </div>
+    <form action="registration.php" method="post">
+      <div id="personalData">
+        <input type="text" name="firstName" placeholder="First name" required>
+        <input type="text" name="lastName" placeholder="Last name" required>
+      </div>
+      <div id="birthdayLabel">
+        <label for="birthday" style="font-size: smaller; color: grey;">Birthday</label>
+        <a href="" title="Click for more information">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/>
+        </a>
+      </div>
+      </svg>
+      <div id="birthday">
+          <select name="month" id="month" required>
+            <option value="">Month</option>
+            <option value="1">Jan</option>
+            <option value="2">Feb</option>
+            <option value="3">Mar</option>
+            <option value="4">Apr</option>
+            <option value="5">May</option>
+            <option value="6">Jun</option>
+            <option value="7">Jul</option>
+            <option value="8">Aug</option>
+            <option value="9">Sep</option>
+            <option value="10">Oct</option>
+            <option value="11">Nov</option>
+            <option value="12">Dec</option>
+          </select>
+          <select name="day" id="day" required>
+            <option value="">Day</option>
+          </select>
+          <select name="year" id="year" required>
+            <option value="">Year</option>
+          </select>
+      </div>
+      <div id="genderLabel">
+        <label for="gender" style="font-size: smaller; color: grey;">Gender</label>
+        <a href="/" title="Click for more information">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3l58.3 0c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24l0-13.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1l-58.3 0c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+        </a>
+      </div>
+      <div id="gender">
+        <div>
+          <label>Female</label>
+          <input type="radio" id="female" name="gender" value="female" />
+        </div>
+        <div>
+          <label>Male</label>
+          <input type="radio" id="male" name="gender" value="male" />
+        </div>
+        <div>
+          <label>Custom</label>
+          <input type="radio" id="custom" name="gender" value="custom" />
+        </div>
+      </div>
+      <div id="personalData1">
+        <input type="text" name="emailPhone" placeholder="Mobile number or email">
+        <input type="password" name="password" placeholder="New password">
+      </div>
+      <div id="submit">
+        <p style="font-size: smaller; color: grey;">
+          People who use our service may have uploaded your contact information to Facebook. Learn more.
+          <br><br>
+          By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy. You may receive SMS Notifications from us and can opt out any time.
+        </p>
+        <button class="button2" style="font-weight: bold;">Sign Up</button>
+      </div>
+    </form>
+    <a style="font-size: large; cursor: pointer;">Already have an account?</a>
+  </main>
+</body>
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 500px;
+    margin-bottom: 5rem;
+  }
+  #personalData {
+    display: flex;
+    gap: 1rem;
+    margin: 0.5rem auto; 
+  }
+  #personalData1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  #birthdayLabel {
+    display: flex;
+    gap: 0.25rem;
+    margin: 0.5rem auto; 
+  }
+
+  #birthday {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+  select {
+    width: 33%;
+    border-radius: 5px;
+    padding: 0.5rem;
+    border: 1px solid lightslategray;
+  }
+
+  #genderLabel {
+    display: flex;
+    gap: 0.25rem;
+    margin: 0.5rem auto; 
+  }
+  #gender {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5rem auto; 
+  }
+
+  #gender > div {
+    width: 33%;
+    border-radius: 5px;
+    padding: 0.5rem;
+    border: 1px solid lightslategray;
+  }
+
+  #submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem auto; 
+  }
+  
+  #submit button {
+    width: 50%;
+  }
+
+  svg {
+    width: 1rem;
+    height: 1rem;
+    fill: lightslategray;
+  }
+
+</style>
+<script>
+  const daySelect = document.querySelector('#day');
+  for (let day = 1; day <= 31; day++) {
+    const option = document.createElement('option');
+    option.value = day;
+    option.textContent = day;
+    daySelect.appendChild(option);
+  }
+  const yearSelect = document.querySelector('#year');
+  for (let year = 1901; year <= 2024; year++) {
+    const option = document.createElement('option');
+    option.value = year;
+    option.textContent = year;
+    yearSelect.appendChild(option);
+  }
+
+</script>
+</html>

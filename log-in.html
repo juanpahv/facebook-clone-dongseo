@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="base.css">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <title>Facebook</title>
+</head>
+<body>
+  <main class="layout">
+    <aside>
+      <img src="img/fb-logo.svg" alt="Facebook Logo" style="min-width: 380px; max-width: 380px;">
+      <p>Connect with friends and the world <br> around you on Facebook.</p>
+    </aside>
+    <section class="container">
+      <form action="">
+        <input type="text" name="email" placeholder="Email or phone number" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <button style="font-weight: bold;">Log In</button>
+      </form>
+      <div>
+        <p style="font-size: small;"><a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0">Forgot password?</a></p>
+        <hr>
+        <a href="sign-up.html" id="create-account">Create new account</a>
+      </div>
+    </section>
+  </main>
+</body>
+<style>
+  .layout {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    align-items: start;
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  aside p {
+    font-size: x-large;
+    text-wrap: nowrap;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0.1rem;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  hr {
+    opacity: 0.6;
+    size: 1px;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  section div {
+    margin-bottom: 2rem;
+  }
+
+  #create-account {
+    background-color: #42b72a;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: fit-content;
+
+    padding: 16px 20px;
+  }
+  #create-account:hover {
+    background-color: #36a420;
+  }
+</style>
+</html>
